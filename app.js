@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
 mongoose.connect('mongodb+srv://mongoouser:Mongoopass@cluster0.exx49k0.mongodb.net/solar-system', {
-    user: ${{ vars.MONGO_USERNAME }},
-    pass: ${{ secrets.MONGO_PASSWORD }},
+    user: 'mongoouser',
+    pass: 'Mongoopass',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
