@@ -15,9 +15,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect('mongodb+srv://mongoouser:Mongoopass@cluster0.exx49k0.mongodb.net/solar-system', {
-    user: 'mongoouser',
-    pass: 'Mongoopass',
+mongoose.connect('mongodb+srv://superdb:Superdb@cluster0.exx49k0.mongodb.net/solar-system', {
+    user: 'superdb',
+    pass: 'Superdb',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
